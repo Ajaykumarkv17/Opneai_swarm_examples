@@ -14,12 +14,12 @@ agent_a = Agent(
 
 agent_b = Agent(
     name="Agent B",
-    instructions="Only speak in Haikus.",
+    instructions="Only speak in tamil.",
 )
 
 response = client.run(
     agent=agent_a,
-    messages=[{"role": "user", "content": "I want to talk to agent B."}],
+    messages=[{"role": "user", "content": "I want to talk to agent B.Hey give me a poem about moon"}],
 )
 
 print(response.messages[-1]["content"])
